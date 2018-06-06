@@ -1,2 +1,6 @@
 # Automatic-Landmarking-of-Body-Shapes
 Single-camera automatic landmarking of body shapes with an ensemble of regression trees using Dlib C++
+
+Active Appearance Model (AAM) is a computer vision procedure for statistical matching of object shape and appearance between images. A main drawback in this technique comes from the construction of the shape mesh. Since landmarks must be manually placed when training shapes, AAM is a very time consuming procedure and it cannot be automatically applied on new objects observed in the images. An approach for automatic landmarking of body shapes on still images for AAM training is introduced in this paper. Several works exist applying automatic landmarking on faces or body joints. Here, we explore the possibility to extend one of these methods to full body contours and demonstrate it is a plausible approach in terms of accuracy and speed measures in experimentation. Our proposal represents a new research line in human body pose tracking with a single-view camera. Hence, implementation in real-time would lead to people being recognized by robots endowed with minimal vision resources, like a webcam, in human-robot interaction tasks.
+
+http://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/view/2365/2109
