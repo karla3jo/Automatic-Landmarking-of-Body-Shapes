@@ -67,6 +67,8 @@ int main(int argc, char** argv)
         {
             cout << "Call this program like this:" << endl;
             cout << "./body_landmark_detection_ex shape_model.dat bodies/*.jpg" << endl;
+            cout << "\nYou can get the shape_model.dat file from:\n";
+            cout << "Automatic-Landmarking-of-Body-Shapes/shape_predictor_180_body_landmarks.dat.zip" << endl;            
             return 0;
         }
 
