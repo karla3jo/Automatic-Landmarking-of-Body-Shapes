@@ -30,6 +30,8 @@ https://www.youtube.com/watch?v=txJw4CeSCIw
 
 ## Contact:
 
-Please leave a comment in my YouTube channel if you have any questions or require assistance of any kind. I'll be glad to help!
+Please leave a comment in my YouTube channel or my ResearchGate page* if you have any questions or require assistance of any kind. I'll be glad to help!
 
 P.S. Remember that if you intend to train a new shape with Dlib's library, whatever the target might be, you must follow the guidelines under http://dlib.net/train_shape_predictor_ex.cpp.html and adjust the parameters according to your own problem. 
+
+*https://www.researchgate.net/publication/301544464_Single-Camera_Automatic_Landmarking_for_People_Recognition_with_an_Ensemble_of_Regression_Trees/comments
