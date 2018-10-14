@@ -1,26 +1,22 @@
 // The contents of this file are in the public domain. See LICENSE_FOR_EXAMPLE_PROGRAMS.txt
 /*
 
-    This example program shows how to find frontal human faces in an image and
-    estimate their pose.  The pose takes the form of 68 landmarks.  These are
-    points on the face such as the corners of the mouth, along the eyebrows, on
-    the eyes, and so forth.  
+    This example program shows how to find frontal human body shapes in an image and
+    estimate their pose, based on the face_landmark_detection example from Dlib's library.  
+    The pose takes the form of 180 landmarks. These are points on the whole body contour 
+    starting from the center of the head, without taking the hair into account.  
     
-
-
-    This face detector is made using the classic Histogram of Oriented
+    This human-shape detector is made using the classic Histogram of Oriented
     Gradients (HOG) feature combined with a linear classifier, an image pyramid,
     and sliding window detection scheme.  The pose estimator was created by
-    using dlib's implementation of the paper:
+    using Dlib's implementation of the paper:
         One Millisecond Face Alignment with an Ensemble of Regression Trees by
         Vahid Kazemi and Josephine Sullivan, CVPR 2014
-    and was trained on the iBUG 300-W face landmark dataset.  
+    and was trained on our own body landmark dataset created with only four
+    handmarked images. 
 
-    Also, note that you can train your own models using dlib's machine learning
+    Also, note that you can train your own models using Dlib's machine learning
     tools.  See train_shape_predictor_ex.cpp to see an example.
-
-    
-
 
     Finally, note that the face detector is fastest when compiled with at least
     SSE2 instructions enabled.  So if you are using a PC with an Intel or AMD
@@ -37,32 +33,7 @@
     2011.  SSE4 is the next fastest and is supported by most current machines.  
 */
 
-/*
-//#include <dlib/image_processing/frontal_face_detector.h>
-#include <dlib/image_processing/render_face_detections.h>
-//#include <dlib/image_processing.h>
-//#include <dlib/gui_widgets.h>
-#include <dlib/image_io.h>
-//#include <iostream>
-
-#include <dlib/svm_threaded.h>
-#include <dlib/string.h>
-#include <dlib/gui_widgets.h>
-#include <dlib/image_processing.h>
-#include <dlib/data_io.h>
-#include <dlib/cmd_line_parser.h>
-
-
-#include <iostream>
-#include <fstream>
-
-#include <sys/time.h>
-#include <stdio.h>
-#include <unistd.h>
-*/
-
-//#include <dlib/image_processing/frontal_face_detector.h>
-#include <dlib/image_processing/render_face_detections.h>
+#include <dlib/image_processing/render_body_detections.h>
 #include <dlib/image_processing.h>
 #include <dlib/gui_widgets.h>
 #include <dlib/image_io.h>
@@ -70,12 +41,9 @@
 
 #include <dlib/svm_threaded.h>
 #include <dlib/string.h>
-//#include <dlib/gui_widgets.h>
-//#include <dlib/image_processing.h>
 #include <dlib/data_io.h>
 #include <dlib/cmd_line_parser.h>
 
-//#include <iostream>
 #include <fstream>
 
 #include <sys/time.h>
@@ -99,14 +67,11 @@ int main(int argc, char** argv)
         {
             cout << "Call this program like this:" << endl;
             cout << "./body_landmark_detection_ex shape_model.dat bodies/*.jpg" << endl;
-            cout << "\nYou can get the shape_predictor_68_face_landmarks.dat file from:\n";
-            cout << "http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2" << endl;
             return 0;
         }
 
-        // We need a face detector.  We will use this to get bounding boxes for
-        // each face in an image.
-        //frontal_face_detector detector = get_frontal_face_detector();
+        // We need a people detector.  We will use this to get bounding boxes for
+        // each body in an image.
 
         typedef scan_fhog_pyramid<pyramid_down<6> > image_scanner_type; 
         image_scanner_type scanner;
@@ -121,13 +86,11 @@ int main(int argc, char** argv)
         }
         object_detector<image_scanner_type> detector2;
         deserialize(detector2, fin);
-        // And we also need a shape_predictor.  This is the tool that will predict face
-        // landmark positions given an image and face bounding box.  Here we are just
-        // loading the model from the shape_predictor_68_face_landmarks.dat file you gave
-        // as a command line argument.
+        // And we also need a shape_predictor.  This is the tool that will predict body
+        // landmark positions given an image and people bounding box.  Here we are just
+        // loading the model from the .dat file you gave as a command line argument.
         shape_predictor shape_model;
         deserialize(argv[1]) >> shape_model;
-
 
         image_window win;
         // Loop over all the images provided on the command line.
@@ -143,16 +106,14 @@ int main(int argc, char** argv)
 
             array2d<rgb_pixel> img;
             load_image(img, argv[i]);
-            // Make the image larger so we can detect small faces.
-            //pyramid_up(img);
 
-            // Now tell the face detector to give us a list of bounding boxes
-            // around all the faces in the image.
+            // Now tell the people detector to give us a list of bounding boxes
+            // around all the bodies in the image.
             std::vector<rectangle> dets = detector2(img);
             cout << "Number of bodies detected: " << dets.size() << endl;
 
             // Now we will go ask the shape_predictor to tell us the pose of
-            // each face we detected.
+            // each body we detected.
             std::vector<full_object_detection> shapes;
             for (unsigned long j = 0; j < dets.size(); ++j)
             {
@@ -339,13 +300,13 @@ int main(int argc, char** argv)
 //                cout << "pixel position of 178 part: " << shape.part(178) << endl;
 //                cout << "pixel position of 179 part: " << shape.part(179) << endl;
 
-                // You get the idea, you can get all the face part locations if
+                // You get the idea, you can get all the body shape part locations if
                 // you want them.  Here we just store them in shapes so we can
                 // put them on the screen.
                 shapes.push_back(shape);
             }
 
-            // Now lets view our face poses on the screen.
+            // Now lets view our body shape poses on the screen.
             win.clear_overlay();
             win.set_image(img);
             win.add_overlay(render_face_detections(shapes));
