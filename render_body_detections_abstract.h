@@ -26,7 +26,7 @@ namespace dlib
                 - dets[i].num_parts() == 180
         ensures
             - Interprets the given objects as body contour detections with parts annotated using
-              the karla3jo body landmark scheme.  We then return a set of overlay lines that
+              Karla Trejo's body landmark scheme.  We then return a set of overlay lines that
               will draw the objects onto the screen in a way that properly draws the
               outline of the human body shape defined by the part locations.
             - Returns a vector with dets.size() elements, each containing the lines
