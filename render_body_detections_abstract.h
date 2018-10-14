@@ -25,7 +25,7 @@ namespace dlib
             - for all valid i:
                 - dets[i].num_parts() == 180
         ensures
-            - Interprets the given objects as face detections with parts annotated using
+            - Interprets the given objects as body contour detections with parts annotated using
               the karla3jo body landmark scheme.  We then return a set of overlay lines that
               will draw the objects onto the screen in a way that properly draws the
               outline of the human body shape defined by the part locations.
