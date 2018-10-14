@@ -1,22 +1,22 @@
 // The contents of this file are in the public domain. See LICENSE_FOR_EXAMPLE_PROGRAMS.txt
 /*
 
-    This example program shows how to find frontal human body shapes in an image and
+    This program shows how to find frontal human body shapes in an image and
     estimate their pose, based on the face_landmark_detection example from Dlib's library.  
     The pose takes the form of 180 landmarks. These are points on the whole body contour 
     starting from the center of the head, without taking the hair into account.  
     
-    This human-shape detector is made using the classic Histogram of Oriented
-    Gradients (HOG) feature combined with a linear classifier, an image pyramid,
-    and sliding window detection scheme.  The pose estimator was created by
-    using Dlib's implementation of the paper:
+    The human-shape detector presented here is made using the classic Histogram of 
+    Oriented Gradients (HOG) feature combined with a linear classifier, an image pyramid,
+    and sliding window detection scheme. The pose estimator was created by using Dlib's 
+    implementation of the paper:
         One Millisecond Face Alignment with an Ensemble of Regression Trees by
         Vahid Kazemi and Josephine Sullivan, CVPR 2014
     and was trained on our own body landmark dataset created with only four
     handmarked images. 
 
     Also, note that you can train your own models using Dlib's machine learning
-    tools.  See train_shape_predictor_ex.cpp to see an example.
+    tools. See train_shape_predictor_ex.cpp to see an example.
 
     Finally, note that the face detector is fastest when compiled with at least
     SSE2 instructions enabled.  So if you are using a PC with an Intel or AMD
