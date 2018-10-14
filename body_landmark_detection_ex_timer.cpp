@@ -311,7 +311,7 @@ int main(int argc, char** argv)
             // Now lets view our body shape poses on the screen.
             win.clear_overlay();
             win.set_image(img);
-            win.add_overlay(render_face_detections(shapes));
+            win.add_overlay(render_body_detections(shapes));
 
             gettimeofday(&end, NULL);
 
