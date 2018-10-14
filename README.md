@@ -10,9 +10,9 @@ Trejo, K., Angulo, C. Single-camera automatic landmarking for people recognition
 
 ## Requisites:
 
--Dlib 18.10
--Shape model pre-trained (shape_predictor_180_body_landmarks.dat)
--Images containing people in front poses (640x480 size)
+- Dlib 18.10
+- Shape model pre-trained (shape_predictor_180_body_landmarks.dat)
+- Images containing people in front poses (640x480 size)
 
 ## How to use:
 
