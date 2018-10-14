@@ -3,6 +3,13 @@
 #ifndef DLIB_RENDER_FACE_DeTECTIONS_H_
 #define DLIB_RENDER_FACE_DeTECTIONS_H_
 
+/* This library was modified from Dlib's render_face_detections.h.
+Copy and paste this file in Dlib's image_processing folder. If you
+encounter any error when running the main file of this repository, comment 
+the original contents of render_face_detections.h and copy-paste 
+the contents of this file, changing all the "body" words for "face".
+*/
+
 #include "full_object_detection.h"
 #include "../gui_widgets.h"
 #include "render_body_detections_abstract.h"
