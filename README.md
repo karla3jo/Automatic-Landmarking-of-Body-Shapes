@@ -21,7 +21,7 @@ Trejo, K., Angulo, C. Single-camera automatic landmarking for people recognition
 2) Copy *render_body_detections_abstract.h* and *render_body detections.h* files in dlib-18.10/dlib/image_processing folder.
 3) Copy *body_landmark_detection_ex_timer.cpp* file in dlib-18.10/dlib/examples folder and generate the executable file in the dlib-18.10/dlib/build folder.
 4) Once in the build folder, unzip *shape_predictor_180_body_landmarks.dat.zip* and *test_images.zip* to obtain the pre-trained body shape model as described and tuned in our paper, and a folder with the test images used in the same paper.
-5) Copy the *object_detector.svm* file to the build directory as well.
+5) Copy *object_detector.svm* file to the build directory as well.
 6) Run the software on this location with **./body_landmark_detection_ex_timer shape_model.dat karla_test/*.jpg**
 
 You can visualize some aspects from the training process described in the paper here:
