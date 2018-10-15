@@ -36,6 +36,6 @@ Remember that if you intend to train a new shape model with Dlib's library, what
 
 ## Contact
 
-Please leave a comment in my YouTube channel or my ResearchGate page* if you have any questions or require assistance of any kind. I'll be glad to help!
+Please leave a comment in my YouTube channel or ResearchGate page* if you have any questions or require assistance of any kind. I'll be glad to help!
 
 *https://www.researchgate.net/publication/301544464_Single-Camera_Automatic_Landmarking_for_People_Recognition_with_an_Ensemble_of_Regression_Trees/comments
