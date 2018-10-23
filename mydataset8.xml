@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_13.JPG'>
+    <box top='51' left='187' width='186' height='394'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_15.JPG'>
+    <box top='45' left='191' width='188' height='400'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_17.JPG'>
+    <box top='40' left='166' width='275' height='411'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_18.JPG'>
+    <box top='33' left='160' width='290' height='417'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_20.JPG'>
+    <box top='24' left='193' width='224' height='422'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_21.JPG'>
+    <box top='27' left='196' width='221' height='417'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_22.JPG'>
+    <box top='8' left='203' width='212' height='439'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_33.JPG'>
+    <box top='38' left='238' width='209' height='407'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_34.JPG'>
+    <box top='34' left='242' width='201' height='418'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_37.JPG'>
+    <box top='39' left='245' width='221' height='408'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_46.JPG'>
+    <box top='48' left='170' width='322' height='432'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_49.JPG'>
+    <box top='42' left='201' width='196' height='439'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/Snapshot_20141209_52.JPG'>
+    <box top='10' left='206' width='200' height='471'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image11.jpg'>
+    <box top='0' left='216' width='197' height='455'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image13.jpg'>
+    <box top='1' left='217' width='192' height='461'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image14.jpg'>
+    <box top='0' left='219' width='189' height='449'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image16.jpg'>
+    <box top='0' left='216' width='192' height='445'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image20.jpg'>
+    <box top='0' left='196' width='206' height='456'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image21.jpg'>
+    <box top='1' left='188' width='212' height='445'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image22.jpg'>
+    <box top='1' left='156' width='247' height='447'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image23.jpg'>
+    <box top='2' left='155' width='256' height='442'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image24.jpg'>
+    <box top='1' left='161' width='237' height='462'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image25.jpg'>
+    <box top='0' left='181' width='251' height='452'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image27.jpg'>
+    <box top='0' left='198' width='229' height='460'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image28.jpg'>
+    <box top='0' left='212' width='209' height='461'>
+      <label>body_detected</label>
+    </box>
+  </image>
+  <image file='/home/karla/Downloads/dlib-18.10/examples/build/karla_detect_3/image29.jpg'>
+    <box top='0' left='217' width='203' height='463'>
+      <label>body_detected</label>
+    </box>
+  </image>
+</images>
+</dataset>
