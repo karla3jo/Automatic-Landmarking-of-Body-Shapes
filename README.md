@@ -20,7 +20,7 @@ Trejo, K., Angulo, C. Single-camera automatic landmarking for people recognition
 1) Download and compile Dlib C++ Library (http://dlib.net/compile.html).
 2) Copy *render_body_detections_abstract.h* and *render_body detections.h* files in dlib-18.10/dlib/image_processing folder.
 3) Copy *body_landmark_detection_ex_timer.cpp* file in dlib-18.10/dlib/examples folder and generate the executable file in the dlib-18.10/dlib/build folder.
-4) Once in the build folder, unzip *shape_predictor_180_body_landmarks.dat.zip* and *test_images.zip* to obtain the pre-trained body shape model as described and tuned in our paper, and a folder with the test images used in the same paper.
+4) Once in the build folder, unzip *shape_predictor_180_body_landmarks.dat.zip* and *test_images.zip* to obtain the pre-trained body shape model as described and tuned in our paper, and a folder with the test images used in the same manuscript.
 5) Copy *object_detector.svm* file to the build directory as well.
 6) Run the software on this location with **./body_landmark_detection_ex_timer shape_model.dat karla_test/*.jpg**
 
@@ -30,7 +30,7 @@ https://www.youtube.com/watch?v=zrJ43trD1rI
 And the final results in:
 https://www.youtube.com/watch?v=txJw4CeSCIw
 
-To reproduce all the experiments seen in our paper from scratch, with all the images we used in each stage, a folder named Images.zip has been uploaded. Inside there are four numbered directories, indicating the order in which they were used, but also an "extra_images" folder containing images that were not included in the originl experiments and can be useful for further experimentation within this dataset. 
+To reproduce all the experiments seen in our paper from scratch, with all the images we used in each stage, a zip file named *Images* has been uploaded. Inside there are four numbered directories, indicating the order in which they were used, but also an "extra_images" folder containing images that were not included in the original experiments and could be useful for further experimentation within this dataset. 
 
 The *mydataset8.xml* file has the final configuration for the people detector created with Dlib's imglab tool, while *training_with_body_landmarks.xml* and *testing_with_body_landmarks.xml* contain the hand-marked body shape images to train the predictor and its corresponding validation set.
 
