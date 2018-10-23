@@ -30,6 +30,10 @@ https://www.youtube.com/watch?v=zrJ43trD1rI
 And the final results in:
 https://www.youtube.com/watch?v=txJw4CeSCIw
 
+To reproduce all the experiments seen in our paper from scratch, with all the images we used in each stage, a folder named Images.zip has been uploaded. Inside there are four numbered directories, indicating the order in which they were used, but also an "extra_images" folder containing images that were not included in the originl experiments and can be useful for further experimentation within this dataset. 
+
+The *mydataset8.xml* file has the final configuration for the people detector created with Dlib's imglab tool, while *training_with_body_landmarks.xml* and *testing_with_body_landmarks.xml* contain the hand-marked body shape images to train the predictor and its corresponding validation set.
+
 ## Re-training
 
 Remember that if you intend to train a new shape model with Dlib's library, whatever the target might be, you must follow the guidelines under http://dlib.net/train_shape_predictor_ex.cpp.html and adjust the parameters according to your own problem. Same case for the object detector, one must refer to http://dlib.net/train_object_detector.cpp.html to retrain the detector for a different target with the help of Dlib's imglab tool.
