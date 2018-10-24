@@ -3,7 +3,7 @@
 Released code for the paper "Single-camera automatic landmarking of body shapes with an ensemble of regression trees". 
 http://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/view/2365/2109
 
-This code is open-source and free for anyone to experiment further with it :)
+This code is open-source and free for anyone to experiment further with it :-)
 If you publish any work that uses this software or refers to it in any way, please just cite us:
 
 Trejo, K., Angulo, C. Single-camera automatic landmarking for people recognition with an ensemble of regression trees. "Computación y Sistemas", 2016, vol. 20, núm. 1, p. 19-28.
